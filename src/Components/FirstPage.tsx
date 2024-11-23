@@ -51,7 +51,7 @@ const FirstPage = () => {
 
     return (
         <div className="w-full h-screen flex justify-center items-center">
-            <div className="hidden md:absolute top-44 right-48 text-2xl font-thin text-neutral-400 cursor-pointer">
+            <div className="hidden md:block md:absolute top-44 right-48 text-2xl font-thin text-neutral-400 cursor-pointer">
                 <div onClick={handleOpenPdf} className="flex items-center">
                     Resume
                     <span>

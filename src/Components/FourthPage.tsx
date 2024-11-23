@@ -1,5 +1,5 @@
 const tennis = "/tennis.svg"
-const myphoto = "public/dp4.jpg"
+const myphoto = "/dp4.png"
 import { useRef } from 'react';
 
 const FourthPage = () => {
