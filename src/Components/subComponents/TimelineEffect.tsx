@@ -145,7 +145,7 @@ const TimelineEfect = () => {
                                 <button
                                     onMouseEnter={() => { console.log(hov); setHov(true) }}
                                     onMouseLeave={() => { console.log("second", hov); setHov(false) }}
-                                    onClick={() => window.open('https://anonymous-brown.vercel.app/', '_blank')}
+                                    onClick={() => window.open('https://steady-frangollo-64fda9.netlify.app/', '_blank')}
                                     className="px-2 py-1 rounded border border-neutral-200 text-neutral-200 bg-transparent">
                                     <LaunchIcon />
                                 </button>
