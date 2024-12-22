@@ -3,8 +3,11 @@ import { Timeline } from "../../Components/ui/timeline";
 const p1 = "/p1.png";
 const p2 = "/p2.png";
 
-const p2_1 = "/p2_2.png";
-const p2_2 = "/p2_1.png";
+// const p2_1 = "/p2_2.png";
+// const p2_2 = "/p2_1.png";
+
+const p2_1 = "/p2_1_2.png";
+const p2_2 = "/p2_2_2.png";
 
 const p3_1 = "/p3_1.png";
 const p3_2 = "/p3_2.png";
@@ -130,12 +133,11 @@ const TimelineEfect = () => {
             ),
         },
         {
-            title: "Anonymous Messaging",
+            // title: "Anonymous Messaging",
+            title: "Balenciaga",
             content: (
                 <div>
-                    {/* <p className="text-neutral-500 text-xs md:text-sm font-normal mb-8">
-                        Built anonymous messaging website.
-                    </p> */}
+
                     <div className="trigger2 grid grid-cols-2 gap-4 group/card">
 
                         <div className="relative second">
@@ -160,12 +162,15 @@ const TimelineEfect = () => {
                         </div>
                         <div className="p-3 hidden second md:flex justify-center items-center text-neutral-500 rounded-lg object-cover max-h-20 md:max-h-44 lg:h-60 w-full">
                             <p>
-                                Anonymous messaging website allows users to send and receive messages without revealing their identity. It offers a secure and private way to communicate, fostering open and honest conversations. Users can enjoy seamless messaging without the fear of compromising their anonymity.
+                                {/* Anonymous messaging website allows users to send and receive messages without revealing their identity. It offers a secure and private way to communicate, fostering open and honest conversations. Users can enjoy seamless messaging without the fear of compromising their anonymity. */}
+                                My redesigned Balenciaga landing page enhances the user experience by blending minimalist aesthetics with intuitive navigation, reflecting the brand's bold identity. It features striking visuals, seamless performance, and a mobile-responsive layout to ensure effortless exploration. The design prioritizes user engagement while maintaining Balenciaga's avant-garde style.
                             </p>
                         </div>
                         <div className="p-3 hidden second md:flex justify-center items-center text-neutral-500 rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full">
                             <p>
-                                The website is built using cutting-edge technologies like TypeScript and Next.js for a responsive, smooth user experience. Tailwind CSS is used for modern, adaptable styling, while MongoDB manages data securely. Authentication and data protection are ensured through robust back-end solutions to maintain user privacy.
+                                {/* The website is built using cutting-edge technologies like TypeScript and Next.js for a responsive, smooth user experience. Tailwind CSS is used for modern, adaptable styling, while MongoDB manages data securely. Authentication and data protection are ensured through robust back-end solutions to maintain user privacy. */}
+
+                                I redesigned the Balenciaga landing page using Figma to create a visually striking and user-friendly design. The development was done with React and TypeScript, styled seamlessly using Tailwind CSS. This combination ensures a modern, responsive, and efficient user experience.
                             </p>
                         </div>
                         <div className="second">
