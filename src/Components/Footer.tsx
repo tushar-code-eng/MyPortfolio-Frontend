@@ -168,8 +168,8 @@ const Footer = () => {
 
     return (
         <div className="overflow-hidden w-[80%] m-auto h-[80%] translate-y-[12.5%] bg-white border-2">
-            <div className='my-6 md:my-12 flex items-center justify-between overflow-hidden mx-2 md:mx-10'>
-                <div className='w-16 md:w-24'>
+            <div className='my-6 lg:my-12 flex items-center justify-between overflow-hidden mx-2 lg:mx-10'>
+                <div className='w-16 lg:w-24'>
                     <img src={arrow} alt="" />
                 </div>
                 <div className=' flex justify-end items-center gap-4 '>
@@ -185,10 +185,10 @@ const Footer = () => {
             </div>
             <div className="w-full text-[#E1E1E1] flex flex-col items-center justify-center">
                 <div className='flex flex-col' >
-                    <span className="text-lg text-center md:text-start text-[#3D3D3D] leading-1 md:leading-none -mb-4">
+                    <span className="text-lg text-center lg:text-start text-[#3D3D3D] leading-1 lg:leading-none -mb-4">
                         Have something in mind <span className="bounce-effect">?</span>
                     </span>
-                    <span className=" text-8xl text-center md:text-start md:text-[9rem] leading-none">
+                    <span className=" text-8xl text-center lg:text-start lg:text-[9rem] leading-none">
                         LET'S TALK
                     </span>
                 </div>
@@ -210,7 +210,7 @@ const Footer = () => {
                 </button>
             </div>
 
-            <div className='md:hidden w-full flex flex-col gap-7 mt-4'>
+            <div className='lg:hidden w-full flex flex-col gap-7 mt-4'>
                 <div className='flex flex-wrap w-full items-center justify-around'>
                     <div
                         onClick={() => window.open('https://github.com/tushar-code-eng', '_blank')}
@@ -239,11 +239,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="hidden py-10 w-full md:flex items-center justify-around px-10 ">
+            <div className="hidden py-10 w-full lg:flex items-center justify-around px-10 ">
                 <div className="flex items-start justify-start cursor-pointer">
                     <div
                         onClick={() => window.open('https://github.com/tushar-code-eng', '_blank')}
-                        className="relative flex items-center justify-between hover-bg-drop text-lg pr-40 pt-2 pb-16 border-t-2 border-[#909090] md:w-full">
+                        className="relative flex items-center justify-between hover-bg-drop text-lg pr-40 pt-2 pb-16 border-t-2 border-[#909090] lg:w-full">
                         <div id='text'>Github</div>
                         <div id='image' className='absolute bottom-0 right-0 p-2 w-12'>
                             <img src={github} alt="" />

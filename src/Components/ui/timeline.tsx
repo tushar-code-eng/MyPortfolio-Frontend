@@ -23,6 +23,28 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     }
   }, [ref]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024 || window.innerWidth < 768) {
+        if (ref.current) {
+          const rect = ref.current.getBoundingClientRect();
+          setHeight(rect.height);
+        }
+      }
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [ref]);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start 10%", "end 50%"],
@@ -36,13 +58,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       className="w-full  font-sans"
       ref={containerRef}
     >
-      <div className="max-w-7xl flex justify-between  mx-auto">
-        <h2 className="text-lg md:text-4xl mb-4 text-center text-green-500 dark:text-white max-w-4xl">
+      <div className="w-full text-center lg:flex lg:justify-between lg:w-[80%] lg:mx-auto ">
+        <div className="text-lg md:text-4xl mb-4 text-green-500 dark:text-white max-w-4xl">
           <span className="text-neutral-500">A glimpse into my</span> Recent Work.
-        </h2>
-        <p className=" text-neutral-500 text-sm md:text-lg max-w-sm">
+        </div>
+        <div className=" text-neutral-500 text-sm md:text-lg lg:max-w-sm">
           I&apos; been very passionate about my projects,<br /> learning and gaining experience by building.
-        </p>
+        </div>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

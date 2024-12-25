@@ -6,7 +6,7 @@ const ThirdPage = () => {
     return (
         <div>
             <BrowserRouter>
-                <div className="hidden md:block mt-20">
+                <div className="mt-20">
                     <TimelineEfect />
                 </div>
             </BrowserRouter>

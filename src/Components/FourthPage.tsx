@@ -7,13 +7,13 @@ const FourthPage = () => {
     const scrollRef = useRef(null)
 
     return (
-        <div ref={scrollRef} className="w-full px-10 md:px-40">
+        <div ref={scrollRef} className="w-full px-10 lg:px-40">
             <div className='pb-10'>
-                <h1 className="text-green-500 text-center text-4xl md:p-4 mb-4">
+                <h1 className="text-green-500 text-center text-4xl lg:p-4 mb-4">
                     This is me!
                 </h1>
-                <div className="text-white md:flex w-full items-center justify-between ">
-                    <div className="md:max-w-[50%] ">
+                <div className="text-white lg:flex w-full items-center justify-between ">
+                    <div className="lg:max-w-[50%] ">
                         <h1 className='text-3xl text-center text-neutral-600 mb-2'>
                             Explorer of tech frontiers.
                         </h1>
