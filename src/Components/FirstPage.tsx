@@ -62,7 +62,7 @@ const FirstPage = () => {
             </div>
             <div className="text-6xl md:text-8xl text-center font-normal text-[#3D3D3D] dark:text-neutral-400 ">
                 FullStack Engineer <br />
-                <FlipWords className=" text-green-500" words={words} />
+                <FlipWords className="text-green-500" words={words} />
                 modern websites
             </div>
         </div>

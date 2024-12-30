@@ -57,7 +57,7 @@ const FirstPageAnimation = () => {
                     <div>
                         <GoingUpAnimation Text="My Portfolio" />
                     </div>
-                    <div ref={fourthRef} className=" overflow-hidden text-6xl italic flex gap-3 p-2     lg:text-[6rem]">
+                    <div ref={fourthRef} className=" overflow-hidden text-6xl italic flex gap-3 p-2 lg:text-[6rem]">
                         <div>
                             <GoingUpAnimation Text="Tushar " />
                         </div>
