@@ -7,7 +7,6 @@
   font-family: "Gilroy";
 }
 
-/* styles.css */
 .shrink-div {
   transition: height 2s ease-in;
 }
@@ -29,9 +28,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e1e1e1;
+  /* background-color: #e1e1e1; */
   transition: top 0.5s ease;
-  z-index: -1;
 }
 
 .hover-bg-drop:hover::after {
@@ -182,4 +180,36 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.underAnimation{
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  height: 1px;
+  background-color: #909090;
+  
+}
+
+.underAnimation1{
+  top: 0;
+  left: 0;
+  width: 0%;
+  transition: all cubic-bezier(0.19,1,0.22,1) 1.5s;
+  transition-delay: .1s;
+}
+
+.underAnimation2{
+  top: 0;
+  right:0;
+  width: 100%;
+  transition: all cubic-bezier(0.19,1,0.22,1) 1.5s;
+}
+
+.underlineParent:hover .underAnimation1{
+  width: 100%;
+}
+
+.underlineParent:hover .underAnimation2{
+  width: 0%;
 }
