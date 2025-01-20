@@ -55,15 +55,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     <div
-      className="w-full  font-sans"
+      className="w-full font-sans"
       ref={containerRef}
     >
-      <div className="w-full text-center lg:flex lg:justify-between lg:w-[80%] lg:mx-auto ">
-        <div className="text-lg md:text-4xl mb-4 text-green-500 dark:text-white max-w-4xl">
-          <span className="text-neutral-500">A glimpse into my</span> Recent Work.
+      <div className="w-full flex flex-col items-center justify-center ">
+        <div className="text-3xl md:text-5xl text-green-500 dark:text-white max-w-4xl text-center">
+          <span className="text-neutral-500 ">A glimpse into my</span> Recent Work.
         </div>
-        <div className=" text-neutral-500 text-sm md:text-lg lg:max-w-sm">
-          I&apos; been very passionate about my projects,<br /> learning and gaining experience by building.
+        <div className=" text-neutral-400 text-sm md:text-lg text-center ">
+          I&apos; been very passionate about my projects and gaining experience by building.
         </div>
       </div>
 
@@ -71,10 +71,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start pt-10 md:pt-40 md:gap-10"
+            className="flex justify-start pt-10 md:pt-20 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
+              <div className=" h-6 w-6 md:h-10 absolute left-5 md:left-3 md:w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                 <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
               </div>
               <h3 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold text-neutral-500 dark:text-neutral-500 ">

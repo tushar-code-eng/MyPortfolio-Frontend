@@ -76,7 +76,7 @@ function App() {
         </div>
         <div
           ref={footerRef}
-          className="w-full bg-[#E1E1E1] h-screen bg-grid-black/[0.05]"
+          className="w-full bg-[#E1E1E1] h-screen bg-grid-black/[0.05] flex items-center justify-center"
         >
           <Footer />
         </div>

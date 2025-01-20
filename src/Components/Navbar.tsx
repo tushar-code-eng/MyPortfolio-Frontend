@@ -4,7 +4,7 @@ import { Button } from "../Components/ui/moving-border";
 
 const Navbar = ({ fourthPageRef,thirdPageRef, secondPageRef, footerRef, isScrolled, isFooterVisible }: { fourthPageRef: React.MutableRefObject<HTMLDivElement | null>,thirdPageRef: React.MutableRefObject<HTMLDivElement | null>, secondPageRef: React.MutableRefObject<HTMLDivElement | null>, footerRef: React.MutableRefObject<HTMLDivElement | null>, isScrolled: boolean, isFooterVisible: boolean }) => {
     return (
-        <div className="flex items-center justify-between fixed top-0 w-full px-8 py-4 z-100">
+        <div className="flex items-center justify-between fixed top-0 w-full px-8 py-4 z-50">
             <div className="flex gap-4 items-center justify-center cursor-pointer">
                 <Button className="w-10 rounded-full overflow-hidden border-green-500 "
                 >

@@ -14,10 +14,10 @@ import github from '../../public/github.svg'
 const SecondPage = () => {
   return (
     <div className="">
-      <div className="text-green-500 text-3xl md:text-5xl text-center pt-10">
+      <div className="text-green-500 text-3xl md:text-5xl text-center py-10">
         Brains Behind My Builds
       </div>
-      <div className="rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+      <div className="rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"

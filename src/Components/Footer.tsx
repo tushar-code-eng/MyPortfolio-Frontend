@@ -167,7 +167,7 @@ const Footer = () => {
     // }
 
     return (
-        <div className="overflow-hidden w-[80%] m-auto h-[80%] translate-y-[12.5%] bg-white border-2">
+        <div className="overflow-hidden w-[80%] m-auto  bg-white border-2">
             <div className='my-6 lg:my-12 flex items-center justify-between overflow-hidden mx-2 lg:mx-10'>
                 <div className='w-16 lg:w-24'>
                     <img src={arrow} alt="" />
