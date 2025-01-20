@@ -142,7 +142,7 @@ const TimelineEfect = () => {
                                 <button
                                     onMouseEnter={() => { console.log(hov); setHov(true) }}
                                     onMouseLeave={() => { console.log("second", hov); setHov(false) }}
-                                    onClick={() => window.open('https://main.d2t1jezx3k0a9k.amplifyapp.com/expenses', '_blank')}
+                                    onClick={() => window.open('https://main.d2t1jezx3k0a9k.amplifyapp.com/dashboard', '_blank')}
                                     className="px-2 py-1 rounded border border-neutral-200 text-neutral-200 bg-transparent">
                                     <LaunchIcon />
                                 </button>
@@ -240,7 +240,7 @@ const TimelineEfect = () => {
                                 <button
                                     onMouseEnter={() => { setHov(true) }}
                                     onMouseLeave={() => { setHov(false) }}
-                                    onClick={() => window.open('https://startling-gumdrop-91aada.netlify.app/', '_blank')}
+                                    onClick={() => window.open('https://psdtodev.vercel.app/', '_blank')}
                                     className="px-2 py-1 rounded border border-neutral-200 text-neutral-200 bg-transparent">
                                     <LaunchIcon />
                                 </button>
