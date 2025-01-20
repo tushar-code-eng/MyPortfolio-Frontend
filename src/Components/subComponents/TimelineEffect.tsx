@@ -3,17 +3,15 @@ import { Timeline } from "../../Components/ui/timeline";
 const p1 = "/p1.png";
 const p2 = "/p2.png";
 
-// const p2_1 = "/p2_2.png";
-// const p2_2 = "/p2_1.png";
-
-const p2_1 = "/p2_1_2.png";
-const p2_2 = "/p2_2_2.png";
+const p2_1 = "/p2_1.png";
+const p2_2 = "/p2_2.png";
 
 const p3_1 = "/p3_1.png";
 const p3_2 = "/p3_2.png";
 
 const p4_1 = "/p4_1.png";
 const p4_2 = "/p4_2.png";
+const p4_3 = "/p4_3.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -133,8 +131,7 @@ const TimelineEfect = () => {
             ),
         },
         {
-            // title: "Anonymous Messaging",
-            title: "Balenciaga",
+            title: "Track Stack",
             content: (
                 <div>
 
@@ -145,7 +142,7 @@ const TimelineEfect = () => {
                                 <button
                                     onMouseEnter={() => { console.log(hov); setHov(true) }}
                                     onMouseLeave={() => { console.log("second", hov); setHov(false) }}
-                                    onClick={() => window.open('https://steady-frangollo-64fda9.netlify.app/', '_blank')}
+                                    onClick={() => window.open('https://main.d2t1jezx3k0a9k.amplifyapp.com/expenses', '_blank')}
                                     className="px-2 py-1 rounded border border-neutral-200 text-neutral-200 bg-transparent">
                                     <LaunchIcon />
                                 </button>
@@ -162,15 +159,12 @@ const TimelineEfect = () => {
                         </div>
                         <div className="p-3 hidden second lg:flex justify-center items-center text-neutral-500 rounded-lg object-cover max-h-20 md:max-h-44 lg:h-60 w-full">
                             <p>
-                                {/* Anonymous messaging website allows users to send and receive messages without revealing their identity. It offers a secure and private way to communicate, fostering open and honest conversations. Users can enjoy seamless messaging without the fear of compromising their anonymity. */}
-                                My redesigned Balenciaga landing page enhances the user experience by blending minimalist aesthetics with intuitive navigation, reflecting the brand's bold identity. It features striking visuals, seamless performance, and a mobile-responsive layout to ensure effortless exploration. The design prioritizes user engagement while maintaining Balenciaga's avant-garde style.
+                                I built Track Stack for inventory management, which involves maintaining product data in a database and presenting expenses and other insights through graphs and pie charts. The website allows users to efficiently track inventory and visualize key metrics, providing an intuitive interface for better decision-making.
                             </p>
                         </div>
                         <div className="p-3 hidden second lg:flex justify-center items-center text-neutral-500 rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full">
                             <p>
-                                {/* The website is built using cutting-edge technologies like TypeScript and Next.js for a responsive, smooth user experience. Tailwind CSS is used for modern, adaptable styling, while MongoDB manages data securely. Authentication and data protection are ensured through robust back-end solutions to maintain user privacy. */}
-
-                                I redesigned the Balenciaga landing page using Figma to create a visually striking and user-friendly design. The development was done with React and TypeScript, styled seamlessly using Tailwind CSS. This combination ensures a modern, responsive, and efficient user experience.
+                                The front-end is designed with Next.js to offer a fast, responsive user experience, while Node.js handles server-side operations efficiently. The application is deployed on AWS, utilizing EC2 for scalable hosting, Amplify for front-end deployment, S3 for storing assets, and RDS for managing the database. This architecture ensures smooth performance, data security, and scalability, making it an ideal solution for inventory management.
                             </p>
                         </div>
                         <div className="second">
@@ -237,20 +231,16 @@ const TimelineEfect = () => {
             ),
         },
         {
-            title: "Smart Contracts",
+            title: "Landing Pages",
             content: (
                 <div>
-                    {/* <p className="text-neutral-500 text-xs md:text-sm font-normal mb-8">
-                        Built smart contracts in ethereum.
-                    </p> */}
                     <div className=" trigger4 grid grid-cols-2 gap-4 group/card">
-
                         <div className="four relative">
                             <div className={`z-10 right-1 top-1  ${hov ? 'absolute' : 'hidden'}`}>
                                 <button
                                     onMouseEnter={() => { setHov(true) }}
                                     onMouseLeave={() => { setHov(false) }}
-                                    onClick={() => window.open('https://github.com/tushar-code-eng/Smart_Contracts', '_blank')}
+                                    onClick={() => window.open('https://startling-gumdrop-91aada.netlify.app/', '_blank')}
                                     className="px-2 py-1 rounded border border-neutral-200 text-neutral-200 bg-transparent">
                                     <LaunchIcon />
                                 </button>
@@ -265,19 +255,23 @@ const TimelineEfect = () => {
                                 className={`cursor-pointer hover:opacity-35 ${hov ? 'opacity-35' : 'opacity-100'} transition duration-300 rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]`}
                             />
                         </div>
-                        <div className="four hidden lg:flex p-3 justify-center items-center text-neutral-500 rounded-lg object-cover max-h-20 md:max-h-44 lg:h-60 w-full">
+                        <div className="four hidden lg:flex p-3  text-neutral-500 rounded-lg object-cover max-h-20 md:max-h-44 lg:h-60 w-full">
                             <p>
-                                Smart contract solutions simplify interactions on the Ethereum blockchain, making transactions secure and automated. Built for various use cases, these contracts enable trustless agreements and decentralized applications. Designed for reliability, they streamline processes and reduce the need for intermediaries.
-                            </p>
-                        </div>
-                        <div className="four  hidden lg:flex p-3 justify-center items-center text-neutral-500 rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full">
-                            <p>
-                                Developed using Solidity, the contracts harness the power of the Ethereum blockchain for transparency and security. The deployment ensures immutability and trust, with optimized coding for efficient gas usage. Integrated development tools and frameworks support a robust, seamless implementation experience.
+                                I have built several responsive landing pages using React, incorporating smooth animations to enhance the user experience. These pages are designed to adapt seamlessly across different screen sizes, ensuring a consistent and engaging interface on both desktop and mobile devices. The animations are implemented to create an interactive feel, guiding users through key content and providing a dynamic visual flow.
                             </p>
                         </div>
                         <div className="four">
                             <img
                                 src={p4_2}
+                                alt="startup template"
+                                width={500}
+                                height={500}
+                                className={`cursor-pointer hover:opacity-35 transition duration-300 rounded-lg object-cover h-20 md:h-44 lg:h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]`}
+                            />
+                        </div>
+                        <div className="four">
+                            <img
+                                src={p4_3}
                                 alt="startup template"
                                 width={500}
                                 height={500}

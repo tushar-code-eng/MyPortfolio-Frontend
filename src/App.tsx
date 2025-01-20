@@ -1,10 +1,10 @@
-import FirstPageAnimaition from "./Components/FirstPageAnimation"
-import "../src/App.css"
-import Navbar from "./Components/Navbar"
-import SecondPage from "./Components/SecondPage"
-import ThirdPage from "./Components/ThirdPage"
-import FourthPage from "./Components/FourthPage"
-import Footer from "./Components/Footer"
+import FirstPageAnimaition from "./Components/FirstPageAnimation";
+import "../src/App.css";
+import Navbar from "./Components/Navbar";
+import SecondPage from "./Components/SecondPage";
+import ThirdPage from "./Components/ThirdPage";
+import FourthPage from "./Components/FourthPage";
+import Footer from "./Components/Footer";
 import { useEffect, useState, useRef } from "react";
 
 function App() {
@@ -24,7 +24,9 @@ function App() {
 
     if (footerRef.current) {
       const footerRect = footerRef.current.getBoundingClientRect();
-      setIsFooterVisible(footerRect.top <= window.innerHeight && footerRect.bottom >= 0);
+      setIsFooterVisible(
+        footerRect.top <= window.innerHeight && footerRect.bottom >= 0
+      );
     }
   };
 
@@ -38,11 +40,9 @@ function App() {
   useEffect(() => {
     // Disable scrolling
     document.body.style.overflow = 'hidden';
-
     const timer = setTimeout(() => {
       document.body.style.overflow = 'auto'; // Enable scrolling after 5 seconds
     }, 5000);
-
     return () => {
       clearTimeout(timer); // Cleanup timer on unmount
       document.body.style.overflow = 'auto'; // Ensure scrolling is enabled on unmount
@@ -55,7 +55,14 @@ function App() {
         <FirstPageAnimaition />
       </div>
       <div className="">
-        <Navbar fourthPageRef={fourthPageRef} thirdPageRef={thirdPageRef} secondPageRef={secondPageRef} footerRef={footerRef} isScrolled={isScrolled} isFooterVisible={isFooterVisible} />
+        <Navbar
+          fourthPageRef={fourthPageRef}
+          thirdPageRef={thirdPageRef}
+          secondPageRef={secondPageRef}
+          footerRef={footerRef}
+          isScrolled={isScrolled}
+          isFooterVisible={isFooterVisible}
+        />
         <div className="w-full bg-black bg-grid-white/[0.05]">
           <div ref={secondPageRef}>
             <SecondPage />
@@ -67,12 +74,15 @@ function App() {
             <FourthPage />
           </div>
         </div>
-        <div ref={footerRef} className="w-full bg-[#E1E1E1] h-screen bg-grid-black/[0.05]">
+        <div
+          ref={footerRef}
+          className="w-full bg-[#E1E1E1] h-screen bg-grid-black/[0.05]"
+        >
           <Footer />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

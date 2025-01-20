@@ -5,14 +5,14 @@ import linkedin from '../../public/linkedin2.svg'
 import top from '../../public/top-arrow.svg'
 import arrow from '../../public/arrow-up-left.svg'
 
-import gsap from 'gsap'
-import { useState } from 'react'
-import axios from 'axios'
+// import gsap from 'gsap'
+// import { useState } from 'react'
+// import axios from 'axios'
 
 const Footer = () => {
 
-    const [name, setName] = useState("")
-    const [email, setEmail] = useState("")
+    // const [name, setName] = useState("")
+    // const [email, setEmail] = useState("")
 
     const scrollToTop = (): void => {
         const startPosition = window.pageYOffset;
@@ -44,127 +44,127 @@ const Footer = () => {
 
 
 
-    const handleClick = () => {
-        const tl = gsap.timeline()
+    // const handleClick = () => {
+    //     const tl = gsap.timeline()
 
-        tl.fromTo('.shrink', {
+    //     tl.fromTo('.shrink', {
 
-        }, {
-            height: "1.5px",
-            paddingTop: 0,
-            paddingBottom: 0,
-            backgroundColor: "#3D3D3D",
-            border: "5px",
-            duration: 2
-        })
-        tl.fromTo('.shrink', {
+    //     }, {
+    //         height: "1.5px",
+    //         paddingTop: 0,
+    //         paddingBottom: 0,
+    //         backgroundColor: "#3D3D3D",
+    //         border: "5px",
+    //         duration: 2
+    //     })
+    //     tl.fromTo('.shrink', {
 
-        }, {
-            paddingLeft: "1px",
-            paddingRight: "1px",
-            duration: 1,
-            transformOrigin: "center"
-        })
-        tl.fromTo('.shrink', {
+    //     }, {
+    //         paddingLeft: "1px",
+    //         paddingRight: "1px",
+    //         duration: 1,
+    //         transformOrigin: "center"
+    //     })
+    //     tl.fromTo('.shrink', {
 
-        }, {
-            rotation: 90,
+    //     }, {
+    //         rotation: 90,
 
-            onComplete: () => {
-                const tl2 = gsap.timeline()
-                tl2.fromTo(".shrink", {}, {
-                    display: "none",
-                    opacity: 0
-                })
+    //         onComplete: () => {
+    //             const tl2 = gsap.timeline()
+    //             tl2.fromTo(".shrink", {}, {
+    //                 display: "none",
+    //                 opacity: 0
+    //             })
 
-                tl2.fromTo(".inputbox", {
-                    paddingLeft: "1px",
-                    paddingRight: "1px",
-                    duration: 1,
-                }, {
-                    display: "block",
-                    paddingBottom: "0.75rem",
-                    paddingTop: "0.75rem",
-                    paddingLeft: "1rem",
-                    padding: "1rem",
-                    transformOrigin: "center",
-                    duration: 1,
-                    opacity: 1,
-                    // delay: 0.5
-                })
-            }
-        })
-    }
+    //             tl2.fromTo(".inputbox", {
+    //                 paddingLeft: "1px",
+    //                 paddingRight: "1px",
+    //                 duration: 1,
+    //             }, {
+    //                 display: "block",
+    //                 paddingBottom: "0.75rem",
+    //                 paddingTop: "0.75rem",
+    //                 paddingLeft: "1rem",
+    //                 padding: "1rem",
+    //                 transformOrigin: "center",
+    //                 duration: 1,
+    //                 opacity: 1,
+    //                 // delay: 0.5
+    //             })
+    //         }
+    //     })
+    // }
 
-    const handleClick2 = () => {
-        const tl = gsap.timeline()
+    // const handleClick2 = () => {
+    //     const tl = gsap.timeline()
 
-        tl.fromTo('.shrink2', {
+    //     tl.fromTo('.shrink2', {
 
-        }, {
-            height: "1.5px",
-            paddingTop: 0,
-            paddingBottom: 0,
-            backgroundColor: "#3D3D3D",
-            border: "5px",
-            duration: 2
-        })
-        tl.fromTo('.shrink2', {
+    //     }, {
+    //         height: "1.5px",
+    //         paddingTop: 0,
+    //         paddingBottom: 0,
+    //         backgroundColor: "#3D3D3D",
+    //         border: "5px",
+    //         duration: 2
+    //     })
+    //     tl.fromTo('.shrink2', {
 
-        }, {
-            paddingLeft: "1px",
-            paddingRight: "1px",
-            duration: 1,
-            transformOrigin: "center"
-        })
-        tl.fromTo('.shrink2', {
+    //     }, {
+    //         paddingLeft: "1px",
+    //         paddingRight: "1px",
+    //         duration: 1,
+    //         transformOrigin: "center"
+    //     })
+    //     tl.fromTo('.shrink2', {
 
-        }, {
-            rotation: 90,
+    //     }, {
+    //         rotation: 90,
 
-            onComplete: () => {
-                const tl2 = gsap.timeline()
-                tl2.fromTo(".shrink2", {}, {
-                    display: "none",
-                    opacity: 0
-                })
+    //         onComplete: () => {
+    //             const tl2 = gsap.timeline()
+    //             tl2.fromTo(".shrink2", {}, {
+    //                 display: "none",
+    //                 opacity: 0
+    //             })
 
-                tl2.fromTo(".inputbox2", {
-                    paddingLeft: "1px",
-                    paddingRight: "1px",
-                    duration: 1,
-                }, {
-                    display: "block",
-                    paddingBottom: "0.75rem",
-                    paddingTop: "0.75rem",
-                    paddingLeft: "1rem",
-                    padding: "1rem",
-                    transformOrigin: "center",
-                    duration: 1,
-                    opacity: 1,
-                    onComplete: () => {
-                        gsap.fromTo(".connectbutton", {}, {
-                            display: "block",
-                            ease: "power3.in"
-                        })
-                    }
-                    // delay: 0.5
-                })
-            }
-        })
-    }
+    //             tl2.fromTo(".inputbox2", {
+    //                 paddingLeft: "1px",
+    //                 paddingRight: "1px",
+    //                 duration: 1,
+    //             }, {
+    //                 display: "block",
+    //                 paddingBottom: "0.75rem",
+    //                 paddingTop: "0.75rem",
+    //                 paddingLeft: "1rem",
+    //                 padding: "1rem",
+    //                 transformOrigin: "center",
+    //                 duration: 1,
+    //                 opacity: 1,
+    //                 onComplete: () => {
+    //                     gsap.fromTo(".connectbutton", {}, {
+    //                         display: "block",
+    //                         ease: "power3.in"
+    //                     })
+    //                 }
+    //                 // delay: 0.5
+    //             })
+    //         }
+    //     })
+    // }
 
-    const handleSubmit = async () => {
+    // const handleSubmit = async () => {
 
-        const tl = gsap.timeline()
+    //     const tl = gsap.timeline()
 
-        tl.fromTo("#all",{},{
-            opacity:0
-        })
+    //     tl.fromTo("#all",{},{
+    //         opacity:0
+    //     })
 
-        const res = await axios.post('http://localhost:3000/api/users', { name, email })
-        console.log(res)
-    }
+    //     const res = await axios.post('http://localhost:3000/api/users', { name, email })
+    //     console.log(res)
+    // }
 
     return (
         <div className="overflow-hidden w-[80%] m-auto h-[80%] translate-y-[12.5%] bg-white border-2">
@@ -193,7 +193,7 @@ const Footer = () => {
                     </span>
                 </div>
             </div>
-            <div className='w-full flex items-center justify-around py-5'>
+            {/* <div className='w-full flex items-center justify-around py-5'>
                 <div onClick={handleClick} className={`shrink  hover-effect border py-5 px-12 rounded-full border-[#3D3D3D] cursor-pointer text-lg overflow-hidden`}>
                     Name
                 </div>
@@ -208,7 +208,7 @@ const Footer = () => {
                 <button onClick={handleSubmit} className='hidden connectbutton '>
                     Connect
                 </button>
-            </div>
+            </div> */}
 
             <div className='lg:hidden w-full flex flex-col gap-7 mt-4'>
                 <div className='flex flex-wrap w-full items-center justify-around'>
